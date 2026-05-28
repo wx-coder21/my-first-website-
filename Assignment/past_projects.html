@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            background-image: url(images/colourful.jpg);
+            background-size: cover;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 10px auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+
+        nav a {
+            font-size: 18px;
+            margin-right: 15px;
+            text-decoration: none;
+            color: black;
+            background-color: lightgray;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            display: block;
+            margin: 10% auto;
+            max-width: 80%;
+            max-height: 70%;
+            border: 3px solid white;
+            border-radius: 4px;
+        }
+
+        .close {
+            position: absolute;
+            top: 30px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            text-decoration: none;
+        }
+
+        .close:hover {
+            color: #bbb;
+        }
+
+        .modal:target {
+            display: block;
+        }
+
+        .modal:target .modal-content {
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0
+    ">
+    <title>Past Projects</title>
+</head>
+
+<body>
+    <div style="text-align: center; padding: 20px;">
+        <h1 style="color: white;">Past Projects</h1>
+        <p style="color: #e0e0e0; font-weight: bold;">This page describes my past projects and experiences.</p>
+    <header>
+        <div style = "width: 100%; max-width: 900px; margin: 10px auto; padding: 0 30px;">
+        <nav style="text-align: right; padding: 10px;">
+            <a href="index.html"> Home</a>  
+            <a href="about_me.html"> About Me</a>  
+            <a href="past_projects.html"> Past Projects</a>  
+            <a href="contact_me.html"> Contact</a>
+        </nav>  
+    </header>
+    </div>
+    </div>
+    <main>
+        <div class="container">
+            <hr style="border: none; border-top: 2px solid #333;">
+            <section class="card">
+                <a href="#project1">
+                    <img src="images/clinic manage.png" alt="clinic management system"
+                        style="width: 100% ; max-width: 300px; border-radius: 10px;"></a>
+                <h2>Project 1: Clinic Management System</h2>
+                <p>This project involved developing a clinic management system using C and worked with team member.
+                    The system allows users to manage patient records, appointments, and billing.</p>
+            </section>
+            <section class="card">
+                <a href="#project2">
+                    <img src="images/toyshop.jpeg" alt="toy store management system"
+                        style="width: 100% ; max-width: 300px; border-radius: 10px; margin-bottom: 15px;"></a>
+                <h2>Project 2: Toy Store Management System</h2>
+                <p>This project involved developing a toy store management system by drawing Entity-Relationship
+                    (ER) diagrams. The system allows users to manage product inventories, customer records, and
+                    sales transactions.</p>
+            </section>
+            <section class="card">
+                <a href="#project3">
+                    <img src="images/website.png" alt="personal website"
+                        style="width: 100% ; max-width: 300px; border-radius: 10px; margin-bottom: 15px;"></a>
+                <h2>Project 3: My first ever personal website </h2>
+                <p>This project involved developing an personal website using HTML and CSS, which can access to
+                    about me, past projects, and contact information.</p>
+            </section>
+    </main>
+    <div id="project1" class="modal">
+        <a href="#" class="close">&times;</a>
+        <img class="modal-content" src="images/clinic manage.png" alt="clinic management system large">
+    </div>
+
+    <div id="project2" class="modal">
+        <a href="#" class="close">&times;</a>
+        <img class="modal-content" src="images/toyshop.jpeg" alt="toy store management system large">
+    </div>
+
+    <div id="project3" class="modal">
+        <a href="#" class="close">&times;</a>
+        <img class="modal-content" src="images/website.png" alt="personal website large">
+    </div>
+    </div>
+</body>
+<footer style="text-align: center; padding: 20px;">
+    <p style="color: grey;">&copy; 2026 My Personal Web Page. All rights reserved.</p>
+</footer>
+
+</html>

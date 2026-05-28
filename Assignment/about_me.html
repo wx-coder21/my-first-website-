@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            background-image: url(images/colourful.jpg);
+            background-size: cover;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding:  0 20px;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: black;
+            background-color: lightgray;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .journey-step {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border-left: 5px solid #15c22f;
+        }
+
+        .journey-step:hover{ 
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .journey-step:active{ 
+            background-color: #e9e9e9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transform: scale(1.02); 
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+
+<body>
+    <div class="container">
+    <div style="text-align: center; padding: 20px;">
+        <h1 style="color: blue;">About Me</h1>
+        <p style="color: #1c1c1c;">This page describes my background and interests.</p>
+    </div>
+        <header>
+            <nav style="text-align: right; padding: 10px;">
+                <a href="index.html"> Home</a> 
+                <a href="about_me.html"> About Me</a> 
+                <a href="past_projects.html"> Past Projects</a> 
+                <a href="contact_me.html"> Contact</a>
+            </nav>
+        </header>
+    <main>
+        <section class="card">
+                <img src="images/school.jpeg" alt="school" style="width: 100% ; max-width: 300px; border-radius: 10px; margin-bottom: 15px;">
+            <h2>My Background</h2>
+            <p> My name is Chong Wen Xuan and I am a student at Taylor's college, currently studying Diploma in
+                Information Technology.</p>
+        </section>
+        <section class="card">
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                    <img src="images/games.jpeg" alt="games" style="width: 100% ; max-width: 300px; border-radius: 10px;">
+                    <img src="images/food.jpeg" alt="food" style="width: 100% ; max-width: 300px; border-radius: 10px;">
+                    <img src="images/movie.jpeg" alt="movies" style="width: 100% ; max-width: 300px; border-radius: 10px;">
+            </div><h2>My Hobbies</h2>
+            <p>In my free time, I enjoy playing video games, watching movies and trying out new restaurants.</p>
+        </section>
+        <section class="card">
+            <img src = "images/journey.png" alt="journey" style="width: 100% ; max-width: 300px; border-radius: 10px;">
+            <h2 style="margin-top: 0px; color: #1c1c1c;">My coding Journey</h2>
+            <p style="color: #1c1c1c; margin-bottom: 20px; font-size: 15px;"> The journey of learning to code is both challenging and rewarding.</p>
+
+            <div class="journey-step">Semester 1 - I learned Introduction to Programming, which is C programming</div>
+            <div class="journey-step">Semester 2 - I learned OOP (Object-oriented Programming), which is Java programming.</div>
+            <div class="journey-step">Semester 3 - I learned Web Development (HTML, CSS, PHP, database).</div>
+        </section>
+
+        <section class="card">
+            <h1> Past experience</h1>
+            <img src="images/cert.jpg" alt="certificate of completion"; style="width: 300px; height: 200px ;border-radius: 50px"> 
+            <img src="images/cert2.jpg" alt="database"; style="width: 300px; height: 200px ;border-radius: 50px">
+            
+            <p> During the last semester, I have taken the Java Foundation coursework and database design coursework, and I have gotten the certificate of completion</p>
+        </section>
+        </main>
+
+
+</div></body>
+<footer style="text-align: center; margin-top: 20px; color: gray;">
+    <p>&copy; 2026 My Personal Web Page. All rights reserved.</p>
+</footer>
+
+</html>
